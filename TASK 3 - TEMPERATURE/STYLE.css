@@ -1,0 +1,168 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #000000);
+}
+
+/* Container */
+.container {
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Converter Box */
+.converter {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  width: 500px;
+  margin: auto;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Input and Select */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+input {
+  text-align: center;
+}
+
+/* Swap Button + Unit Select */
+.unit-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.unit-select select {
+  width: 40%;
+}
+
+#swapBtn {
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  background: #ff9800;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#swapBtn:hover {
+  background: #e68900;
+  transform: rotate(180deg);
+}
+
+/* Convert Button with Neon Glow */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+button:hover {
+  background: #45a049;
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(255,255,255,0.8);
+}
+
+/* Result + History side by side */
+.output-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.result-box, .history-box {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: left;
+  color: #fff;
+}
+
+/* Result Animation */
+.result {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.result.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* History */
+.history-box ul {
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.history-box ul li {
+  font-size: 14px;
+  margin: 4px 0;
+  padding: 6px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #ff5252;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

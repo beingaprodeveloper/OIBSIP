@@ -1,0 +1,209 @@
+/* General Page Style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
+}
+/*____________________________ HEADER ____________________________________________________________*/
+header {
+  background: #111;
+  color: #fff;
+  padding: 5px 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #ff9800;
+}
+
+/* ______________________  Packages Section  ____________________________________*/
+.package-details {
+  padding: 10px 20px;
+  text-align: center;
+  background: url("https://www.pixelstalk.net/wp-content/uploads/2016/05/Photo-sky-wallpapers-desktop-desgins.jpg") no-repeat center center/cover;
+  border-bottom: #111 10px solid;
+}
+
+.package-details h2 {
+  font-size: 2rem;
+  margin-bottom: 2px;
+}
+
+.package-details p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.dest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.package-card {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.6); /* 60% transparent */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin: 25px auto;
+  padding: 5px;
+  backdrop-filter: blur(10px);           /* blur behind card */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.package-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.package-card ul li {
+  padding: 8px 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+/*  ---------------------------- Color Themes ------------------------------------------------*/
+.budget {
+  border-left: 6px solid #4caf50;
+}
+.standard {
+  border-left: 6px solid #2196f3;
+}
+.luxury {
+  border-left: 6px solid #e91e63;
+}
+/* ------------------------------ DESTINATION Section -------------------------------------*/
+
+.dest-grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.location {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.5s ease;
+  border-bottom: #111 10px solid;
+  border-top: #111 10px solid;
+}
+
+.location h4 {
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.location p {
+  text-align: center;
+}
+
+.plate {
+  width: 200px;
+  background: #db5a5a97;
+  background: linear-gradient(to bottom right, rgba(227, 33, 33, 0.736) 0%, rgba(251, 154, 154, 0.5) 100%);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 400px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+/* ------------------------------------ Contact Form ---------------------------------------*/
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: #3f3e3e;
+  color: #fff;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact select,
+.contact button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.contact input,
+.contact select {
+  outline: none;
+}
+
+.contact button {
+  background: #ff9800;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #e68900;
+}
+
+/* ------------------------------ Footer  ---------------------------------------------------- */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: #ccc;
+  margin-top: 20px;
+  margin-bottom: end;
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Temperature Converter</title>
+  <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌡️ Temperature Converter</h1>
+    <div class="converter">
+      
+      <!-- Input Temperature -->
+      <input type="number" id="temperature" placeholder="Enter temperature" />
+
+      <!-- Unit Selection -->
+      <div class="unit-select">
+        <select id="fromUnit">
+          <option value="C">Celsius (°C)</option>
+          <option value="F">Fahrenheit (°F)</option>
+          <option value="K">Kelvin (K)</option>
+        </select>
+
+        <button id="swapBtn">⇄</button>
+
+        <select id="toUnit">
+          <option value="F">Fahrenheit (°F)</option>
+          <option value="C">Celsius (°C)</option>
+          <option value="K">Kelvin (K)</option>
+        </select>
+      </div>
+
+      <!-- Convert Button -->
+      <button onclick="convertTemperature()">Convert</button>
+
+      <!-- Result + History side by side -->
+      <div class="output-section">
+        <!-- Result Display -->
+        <div class="result-box">
+          <h3>✅ Result</h3>
+          <div class="result" id="result">Converted value will appear here</div>
+        </div>
+
+        <!-- History -->
+        <div class="history-box">
+          <h3>📝 Recent Conversions</h3>
+          <ul id="historyList"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="SCRIPT.js"></script>
+</body>
+</html>

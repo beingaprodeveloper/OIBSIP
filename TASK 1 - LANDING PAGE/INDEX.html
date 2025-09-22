@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelX - Explore the World</title>
+  <link rel="stylesheet" href="STYLEE.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="travel">Travel</span><span class="x">X</span>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <!-- Background image is handled in CSS -->
+  <div class="hero-text">
+    <h2>  Explore the World with Us</h2>
+    <p>Your dream destinations, one click away.</p>
+    <a href="#destinations" class="btn">Book Now</a>
+  </div>
+</section>
+
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="destinations" >
+    <h2>Popular Destinations</h2>
+    <h3>NATIONAL</h3>
+    
+    <div class="dest-grid">
+    <div class="card" onclick="scrollToPackages()">  
+        <img src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Gateway-of-India-1.jpg" alt="Mumbai">
+        <h3>Mumbai</h3>
+    </div>
+    <div class="card" onclick="scrollToPackages()">
+        <img src="https://www.adotrip.com/public/images/areas/5c3f1c0f73f93-Darjeeling%20Railway%20Places%20to%20See.jpg" alt="Darjeeling">
+        <h3>Darjeeling</h3>
+    </div>
+    <div class="card" onclick="scrollToPackages()">
+        <img src="https://th.bing.com/th/id/R.b4c5bd66003981931a69a2f18e148be6?rik=xh8LbrpcCRd9nQ&riu=http%3a%2f%2fwww.goaweddingvenues.com%2fuploads%2fresort%2fresort_pics%2f99_817_resort_14.jpg&ehk=DWMJ6evoATmJC6E62jsPeNQngsYY%2bmW9Ps%2fqAliIIT8%3d&risl=&pid=ImgRaw&r=0" alt="Goa">
+        <h3>Goa</h3>
+    </div>
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://www.joonsquare.com/usermanage/image/state/19-lakshadweep/lakshadweep-lakshadweep-01.png" alt="Lakshadweep">
+        <h3>Lakshadweep</h3>
+      </div>
+    <div class="card" onclick="scrollToPackages()">
+        <img src="https://i.pinimg.com/originals/84/ed/16/84ed165239f3e217d6ffb72a266d15a4.jpg" alt="Manali">
+        <h3>Manali</h3>
+    </div>
+    
+    <div class="card" onclick="scrollToPackages()">
+        <img src="https://www.tourmyindia.com/blog/wp-content/uploads/2014/11/best-places-to-visit-andaman-nicobar-islands.png" alt="Andaman nicobar">
+        <h3>Andaman nicobar</h3>
+      </div>
+    </div>
+    
+    <h3>INTERNATIONAL</h3>
+    <div class="dest-grid">
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/c0/4f/a6.jpg" alt="Paris" height="20cm" width="30cm">
+        <h3>Paris</h3>
+      </div>
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://www.travelrepublic.co.uk/blog/wp-content/uploads/2011/03/iStock-647003776.jpg" alt="Dubai">
+        <h3>Dubai</h3>
+      </div>
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://th.bing.com/th/id/R.5c28b683555572947fdd02a334efe1b4?rik=5UyQvNZ42t73Dg&riu=http%3a%2f%2fwww.worldofwanderlust.com%2fwp-content%2fuploads%2f2015%2f07%2fstatue-of-liberty-_1_.jpg&ehk=I7aHlJ1oB%2fzYH7gfAUMXaSNEzCKEHeS%2bLDhGhlZggDk%3d&risl=&pid=ImgRaw&r=0" alt="New York">
+        <h3>New York</h3>
+      </div>
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://wallpaperaccess.com/full/32545.jpg" alt="London">
+        <h3>London</h3>
+      </div>
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://media.cntraveler.com/photos/58da7b6e1021b64be09794da/master/pass/GettyImages-177303568.jpg?mbid=social_retweet" alt="Rome">
+        <h3>Rome</h3>
+      </div>
+      <div class="card"   onclick="scrollToPackages()">
+        <img src="https://www.traveloptimizer.de/wp-content/uploads/2021/09/marina-bay-sands-singapur.jpg" alt="Singapore">
+        <h3>Singapore</h3>
+      </div>
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://www.tripsavvy.com/thmb/ZtwK0eWCSDo4DQjEGi-IupGJ2I0=/5472x3648/filters:no_upscale():max_bytes(150000):strip_icc()/wat-arun-temple-bangkok-5c461eee46e0fb00016fe445.jpg" alt="Bangkok">
+        <h3>Thailand</h3>
+      </div>
+     <div class="card" onclick="scrollToPackages()">
+        <img src="https://wallpaperaccess.com/full/447855.jpg" alt="Spain">
+        <h3>Spain</h3>
+      </div>
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://d22ir9aoo7cbf6.cloudfront.net/wp-content/uploads/sites/4/2019/08/Ulun-Danu-Beratan-in-Bedugul-Bali-Indonesia-.jpg" alt="Bali">
+        <h3>Bali</h3>
+      </div>
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://images.luxuryescapes.com/q_auto:good/c8sbgfaplmjhyvptv8l" alt="Japan">
+        <h3>Japan(Kyoto)</h3>
+      </div>      
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://i.ytimg.com/vi/wT4UuRm6Me0/maxresdefault.jpg" alt="Jammu & Kashmir">
+        <h3>Jammu & Kashmir</h3>
+      </div>
+      <div class="card" onclick="scrollToPackages()">
+        <img src="https://www.tripsavvy.com/thmb/F-m-fKVHCHPnER1vWEhpeL_prcU=/3588x2470/filters:fill(auto,1)/GettyImages-860736748-92a985df6f0c4854993acbb1f6ce0041.jpg" alt="Moscow">
+        <h3>Moscow</h3>
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="packages">
+    <h2>Travel Packages</h2>
+    <div class="pack-grid">
+      <div class="pack">
+        <h3>Budget</h3>
+        <p>Affordable trips for everyone.</p>
+        <p><strong>$299</strong></p>
+        <a href="BOOKNOW.html" class="btn">Book Now</a>
+
+      </div>
+      <div class="pack">
+        <h3>Standard</h3>
+        <p>Perfect balance of comfort & price.</p>
+        <p><strong>$599</strong></p>
+        <a href="BOOKNOW.html" class="btn">Book Now</a>
+      </div>
+      <div class="pack">
+        <h3>Luxury</h3>
+        <p>Experience premium luxury travel.</p>
+        <p><strong>$999</strong></p>
+        <a href="BOOKNOW.html" class="btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Why Choose TravelX?</h2>
+    <p>We provide the best travel deals with trusted service, 24/7 support, and unforgettable experiences across the globe.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TravelX | All Rights Reserved</p>
+  </footer>
+
+  
+<!-- JavaScript -->
+<script>
+  function scrollToPackages() {
+    document.getElementById("packages").scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+
+
+</body>
+</html>
